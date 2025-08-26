@@ -1,0 +1,512 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+-- Instances: 44 | Scripts: 0 | Modules: 0 | Tags: 1
+local CollectionService = game:GetService("CollectionService");
+local G2L = {};
+
+-- Players.helping2818.PlayerGui.ScreenGui
+G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- Tags
+CollectionService:AddTag(G2L["ScreenGui_1"], [[main]]);
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar
+G2L["bar_2"] = Instance.new("Frame", G2L["ScreenGui_1"]);
+G2L["bar_2"]["BorderSizePixel"] = 0;
+G2L["bar_2"]["BackgroundColor3"] = Color3.fromRGB(24, 20, 29);
+G2L["bar_2"]["Size"] = UDim2.new(0.83853, 0, 0.92053, 0);
+G2L["bar_2"]["Position"] = UDim2.new(0.15014, 0, 0, 0);
+G2L["bar_2"]["Name"] = [[bar]];
+G2L["bar_2"]["BackgroundTransparency"] = 0.17;
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3
+G2L["bar3_3"] = Instance.new("Frame", G2L["bar_2"]);
+G2L["bar3_3"]["BorderSizePixel"] = 0;
+G2L["bar3_3"]["BackgroundColor3"] = Color3.fromRGB(24, 20, 29);
+G2L["bar3_3"]["Size"] = UDim2.new(0.73649, 0, 0.8777, 0);
+G2L["bar3_3"]["Position"] = UDim2.new(0.22973, 0, 0.05755, 0);
+G2L["bar3_3"]["Name"] = [[bar3]];
+G2L["bar3_3"]["BackgroundTransparency"] = 0.17;
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.UICorner
+G2L["UICorner_4"] = Instance.new("UICorner", G2L["bar3_3"]);
+G2L["UICorner_4"]["CornerRadius"] = UDim.new(0, 37);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar4
+G2L["bar4_5"] = Instance.new("Frame", G2L["bar3_3"]);
+G2L["bar4_5"]["BorderSizePixel"] = 0;
+G2L["bar4_5"]["BackgroundColor3"] = Color3.fromRGB(24, 20, 29);
+G2L["bar4_5"]["Size"] = UDim2.new(0.23394, 0, 1, 0);
+G2L["bar4_5"]["Position"] = UDim2.new(-0.27064, 0, 0.0082, 0);
+G2L["bar4_5"]["Name"] = [[bar4]];
+G2L["bar4_5"]["BackgroundTransparency"] = 0.17;
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar4.UICorner
+G2L["UICorner_6"] = Instance.new("UICorner", G2L["bar4_5"]);
+G2L["UICorner_6"]["CornerRadius"] = UDim.new(0, 30);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar4.executive
+G2L["executive_7"] = Instance.new("ImageButton", G2L["bar4_5"]);
+G2L["executive_7"]["BorderSizePixel"] = 0;
+G2L["executive_7"]["BackgroundColor3"] = Color3.fromRGB(16, 236, 255);
+G2L["executive_7"]["Size"] = UDim2.new(0.52941, 0, 0.22131, 0);
+G2L["executive_7"]["Name"] = [[executive]];
+G2L["executive_7"]["Position"] = UDim2.new(0.2549, 0, 0.06557, 0);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar4.executive.UICorner
+G2L["UICorner_8"] = Instance.new("UICorner", G2L["executive_7"]);
+G2L["UICorner_8"]["CornerRadius"] = UDim.new(0, 40);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar4.ScrollingFrame
+G2L["ScrollingFrame_9"] = Instance.new("ScrollingFrame", G2L["bar4_5"]);
+G2L["ScrollingFrame_9"]["BorderSizePixel"] = 0;
+G2L["ScrollingFrame_9"]["CanvasPosition"] = Vector2.new(12, 0);
+G2L["ScrollingFrame_9"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["ScrollingFrame_9"]["Size"] = UDim2.new(0.94118, 0, 0.66393, 0);
+G2L["ScrollingFrame_9"]["Position"] = UDim2.new(0.01961, 0, 0.31148, 0);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar4.ScrollingFrame.UICorner
+G2L["UICorner_a"] = Instance.new("UICorner", G2L["ScrollingFrame_9"]);
+G2L["UICorner_a"]["CornerRadius"] = UDim.new(0, 30);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar4.ScrollingFrame.clear
+G2L["clear_b"] = Instance.new("ImageButton", G2L["ScrollingFrame_9"]);
+G2L["clear_b"]["BorderSizePixel"] = 0;
+G2L["clear_b"]["BackgroundColor3"] = Color3.fromRGB(31, 255, 132);
+G2L["clear_b"]["Size"] = UDim2.new(0, 54, 0, 54);
+G2L["clear_b"]["Name"] = [[clear]];
+G2L["clear_b"]["Position"] = UDim2.new(0.35417, 0, 0.11111, 0);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar4.ScrollingFrame.clear.UICorner
+G2L["UICorner_c"] = Instance.new("UICorner", G2L["clear_b"]);
+G2L["UICorner_c"]["CornerRadius"] = UDim.new(0, 40);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.UIStroke
+G2L["UIStroke_d"] = Instance.new("UIStroke", G2L["bar3_3"]);
+
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7
+G2L["bar7_e"] = Instance.new("Frame", G2L["bar3_3"]);
+G2L["bar7_e"]["BorderSizePixel"] = 0;
+G2L["bar7_e"]["BackgroundColor3"] = Color3.fromRGB(41, 33, 46);
+G2L["bar7_e"]["Size"] = UDim2.new(0.90367, 0, 0.52459, 0);
+G2L["bar7_e"]["Position"] = UDim2.new(0.04587, 0, 0.06557, 0);
+G2L["bar7_e"]["Name"] = [[bar7]];
+G2L["bar7_e"]["BackgroundTransparency"] = 0.17;
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7.UICorner
+G2L["UICorner_f"] = Instance.new("UICorner", G2L["bar7_e"]);
+G2L["UICorner_f"]["CornerRadius"] = UDim.new(0, 37);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7.bar7
+G2L["bar7_10"] = Instance.new("Frame", G2L["bar7_e"]);
+G2L["bar7_10"]["BorderSizePixel"] = 0;
+G2L["bar7_10"]["BackgroundColor3"] = Color3.fromRGB(41, 33, 46);
+G2L["bar7_10"]["Size"] = UDim2.new(0.53807, 0, 0.60938, 0);
+G2L["bar7_10"]["Position"] = UDim2.new(-0.01015, 0, 1.125, 0);
+G2L["bar7_10"]["Name"] = [[bar7]];
+G2L["bar7_10"]["BackgroundTransparency"] = 0.17;
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7.bar7.UICorner
+G2L["UICorner_11"] = Instance.new("UICorner", G2L["bar7_10"]);
+G2L["UICorner_11"]["CornerRadius"] = UDim.new(0, 37);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7.bar7.UIStroke
+G2L["UIStroke_12"] = Instance.new("UIStroke", G2L["bar7_10"]);
+
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7.UIStroke
+G2L["UIStroke_13"] = Instance.new("UIStroke", G2L["bar7_e"]);
+
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7.TextBox
+G2L["TextBox_14"] = Instance.new("TextBox", G2L["bar7_e"]);
+G2L["TextBox_14"]["CursorPosition"] = -1;
+G2L["TextBox_14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["TextBox_14"]["BorderSizePixel"] = 0;
+G2L["TextBox_14"]["TextWrapped"] = true;
+G2L["TextBox_14"]["TextSize"] = 18;
+G2L["TextBox_14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextBox_14"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["TextBox_14"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["TextBox_14"]["RichText"] = true;
+G2L["TextBox_14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["TextBox_14"]["ClearTextOnFocus"] = false;
+G2L["TextBox_14"]["ClipsDescendants"] = true;
+G2L["TextBox_14"]["Size"] = UDim2.new(0.98985, 0, 1, 0);
+G2L["TextBox_14"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextBox_14"]["Text"] = [[]];
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7.TextBox.UICorner
+G2L["UICorner_15"] = Instance.new("UICorner", G2L["TextBox_14"]);
+G2L["UICorner_15"]["CornerRadius"] = UDim.new(0, 37);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.bar7.TextBox.UIStroke
+G2L["UIStroke_16"] = Instance.new("UIStroke", G2L["TextBox_14"]);
+G2L["UIStroke_16"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["UIStroke_16"]["Color"] = Color3.fromRGB(187, 187, 187);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame
+G2L["Frame_17"] = Instance.new("Frame", G2L["bar3_3"]);
+G2L["Frame_17"]["BorderSizePixel"] = 0;
+G2L["Frame_17"]["BackgroundColor3"] = Color3.fromRGB(37, 36, 52);
+G2L["Frame_17"]["Size"] = UDim2.new(0.42202, 0, 0.2459, 0);
+G2L["Frame_17"]["Position"] = UDim2.new(0.5367, 0, 0.72131, 0);
+G2L["Frame_17"]["BorderColor3"] = Color3.fromRGB(118, 116, 119);
+G2L["Frame_17"]["BackgroundTransparency"] = 0.5;
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame.ImageButton
+G2L["ImageButton_18"] = Instance.new("ImageButton", G2L["Frame_17"]);
+G2L["ImageButton_18"]["SliceScale"] = 1.2;
+G2L["ImageButton_18"]["ResampleMode"] = Enum.ResamplerMode.Pixelated;
+G2L["ImageButton_18"]["BackgroundColor3"] = Color3.fromRGB(255, 76, 76);
+G2L["ImageButton_18"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ImageButton_18"]["ZIndex"] = 2;
+G2L["ImageButton_18"]["Size"] = UDim2.new(0.26087, 0, 0.8, 0);
+G2L["ImageButton_18"]["BorderColor3"] = Color3.fromRGB(245, 245, 245);
+G2L["ImageButton_18"]["Position"] = UDim2.new(0.61957, 0, 0.1, 0);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame.ImageButton.UICorner
+G2L["UICorner_19"] = Instance.new("UICorner", G2L["ImageButton_18"]);
+G2L["UICorner_19"]["CornerRadius"] = UDim.new(0, 35);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame.ImageButton.ImageButton
+G2L["ImageButton_1a"] = Instance.new("ImageButton", G2L["ImageButton_18"]);
+G2L["ImageButton_1a"]["BorderSizePixel"] = 0;
+G2L["ImageButton_1a"]["BackgroundColor3"] = Color3.fromRGB(60, 255, 35);
+G2L["ImageButton_1a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["ImageButton_1a"]["Position"] = UDim2.new(-2.125, 0, 0, 0);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame.ImageButton.ImageButton.UICorner
+G2L["UICorner_1b"] = Instance.new("UICorner", G2L["ImageButton_1a"]);
+G2L["UICorner_1b"]["CornerRadius"] = UDim.new(0, 40);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame.ImageButton.ImageButton.ImageButton
+G2L["ImageButton_1c"] = Instance.new("ImageButton", G2L["ImageButton_1a"]);
+G2L["ImageButton_1c"]["BorderSizePixel"] = 0;
+G2L["ImageButton_1c"]["BackgroundColor3"] = Color3.fromRGB(255, 249, 30);
+G2L["ImageButton_1c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["ImageButton_1c"]["Position"] = UDim2.new(1.08333, 0, 0, 0);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame.ImageButton.ImageButton.ImageButton.UICorner
+G2L["UICorner_1d"] = Instance.new("UICorner", G2L["ImageButton_1c"]);
+G2L["UICorner_1d"]["CornerRadius"] = UDim.new(0, 40);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame.UICorner
+G2L["UICorner_1e"] = Instance.new("UICorner", G2L["Frame_17"]);
+G2L["UICorner_1e"]["CornerRadius"] = UDim.new(0, 37);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar3.Frame.UIStroke
+G2L["UIStroke_1f"] = Instance.new("UIStroke", G2L["Frame_17"]);
+G2L["UIStroke_1f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["UIStroke_1f"]["Thickness"] = 1.5;
+G2L["UIStroke_1f"]["Color"] = Color3.fromRGB(73, 63, 85);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar2
+G2L["bar2_20"] = Instance.new("Frame", G2L["bar_2"]);
+G2L["bar2_20"]["BorderSizePixel"] = 0;
+G2L["bar2_20"]["BackgroundColor3"] = Color3.fromRGB(24, 20, 29);
+G2L["bar2_20"]["Size"] = UDim2.new(0.10135, 0, 0.84173, 0);
+G2L["bar2_20"]["Position"] = UDim2.new(-0.14865, 0, 0.05755, 0);
+G2L["bar2_20"]["Name"] = [[bar2]];
+G2L["bar2_20"]["BackgroundTransparency"] = 0.17;
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar2.UICorner
+G2L["UICorner_21"] = Instance.new("UICorner", G2L["bar2_20"]);
+G2L["UICorner_21"]["CornerRadius"] = UDim.new(0, 20);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.UICorner
+G2L["UICorner_22"] = Instance.new("UICorner", G2L["bar_2"]);
+G2L["UICorner_22"]["CornerRadius"] = UDim.new(0, 35);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5
+G2L["bar5_23"] = Instance.new("Frame", G2L["bar_2"]);
+G2L["bar5_23"]["BorderSizePixel"] = 0;
+G2L["bar5_23"]["BackgroundColor3"] = Color3.fromRGB(24, 20, 29);
+G2L["bar5_23"]["Size"] = UDim2.new(0.12838, 0, 1, 0);
+G2L["bar5_23"]["Position"] = UDim2.new(-0.16216, 0, -0.00719, 0);
+G2L["bar5_23"]["Name"] = [[bar5]];
+G2L["bar5_23"]["BackgroundTransparency"] = 0.17;
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5.UICorner
+G2L["UICorner_24"] = Instance.new("UICorner", G2L["bar5_23"]);
+G2L["UICorner_24"]["CornerRadius"] = UDim.new(0, 30);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5.UIStroke
+G2L["UIStroke_25"] = Instance.new("UIStroke", G2L["bar5_23"]);
+G2L["UIStroke_25"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["UIStroke_25"]["Thickness"] = 2;
+G2L["UIStroke_25"]["Color"] = Color3.fromRGB(43, 43, 43);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5.Main
+G2L["Main_26"] = Instance.new("TextButton", G2L["bar5_23"]);
+G2L["Main_26"]["BorderSizePixel"] = 0;
+G2L["Main_26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["Main_26"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["Main_26"]["Size"] = UDim2.new(0.73684, 0, 0.17986, 0);
+G2L["Main_26"]["Text"] = [[Main]];
+G2L["Main_26"]["Name"] = [[Main]];
+G2L["Main_26"]["Position"] = UDim2.new(0.13158, 0, 0.31655, 0);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5.Main.UICorner
+G2L["UICorner_27"] = Instance.new("UICorner", G2L["Main_26"]);
+G2L["UICorner_27"]["CornerRadius"] = UDim.new(0, 20);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5.Main.UIStroke
+G2L["UIStroke_28"] = Instance.new("UIStroke", G2L["Main_26"]);
+G2L["UIStroke_28"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["UIStroke_28"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5.code
+G2L["code_29"] = Instance.new("TextButton", G2L["bar5_23"]);
+G2L["code_29"]["BorderSizePixel"] = 0;
+G2L["code_29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["code_29"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["code_29"]["Size"] = UDim2.new(0.71053, 0, 0.17986, 0);
+G2L["code_29"]["Text"] = [[code]];
+G2L["code_29"]["Name"] = [[code]];
+G2L["code_29"]["Position"] = UDim2.new(0.15789, 0, 0.51799, 0);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5.code.UICorner
+G2L["UICorner_2a"] = Instance.new("UICorner", G2L["code_29"]);
+G2L["UICorner_2a"]["CornerRadius"] = UDim.new(0, 20);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.bar5.code.UIStroke
+G2L["UIStroke_2b"] = Instance.new("UIStroke", G2L["code_29"]);
+G2L["UIStroke_2b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["UIStroke_2b"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- Players.helping2818.PlayerGui.ScreenGui.bar.UIAspectRatioConstraint
+G2L["UIAspectRatioConstraint_2c"] = Instance.new("UIAspectRatioConstraint", G2L["bar_2"]);
+G2L["UIAspectRatioConstraint_2c"]["AspectRatio"] = 2.1295;
+
+-- Close button animation
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer
+local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+
+local closeBtn = gui.bar.bar3.Frame.ImageButton
+
+-- Hover animation (button grows slightly & glows)
+closeBtn.MouseEnter:Connect(function()
+    TweenService:Create(closeBtn, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+        Size = closeBtn.Size + UDim2.new(0.1, 0, 0.1, 0),
+        BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+    }):Play()
+end)
+
+-- Leave animation (back to normal)
+closeBtn.MouseLeave:Connect(function()
+    TweenService:Create(closeBtn, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+        Size = UDim2.new(0.26087, 0, 0.8, 0), -- original size
+        BackgroundColor3 = Color3.fromRGB(255, 76, 76)
+    }):Play()
+end)
+
+-- Click animation (quick pulse + close GUI)
+closeBtn.MouseButton1Click:Connect(function()
+    -- Pulse effect
+    local tweenOut = TweenService:Create(closeBtn, TweenInfo.new(0.1), {
+        Size = closeBtn.Size + UDim2.new(0.15, 0, 0.15, 0),
+        BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+    })
+    local tweenIn = TweenService:Create(closeBtn, TweenInfo.new(0.2), {
+        Size = UDim2.new(0.26087, 0, 0.8, 0),
+        BackgroundColor3 = Color3.fromRGB(255, 76, 76)
+    })
+
+    tweenOut:Play()
+    tweenOut.Completed:Wait()
+    tweenIn:Play()
+    tweenIn.Completed:Wait()
+
+    -- Destroy GUI (close)
+    gui:Destroy()
+end)
+
+-- Rainbow Glow for Main & Code buttons
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer
+local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+
+local mainBtn = gui.bar.bar5.Main
+local codeBtn = gui.bar.bar5.code
+
+-- Add glowing border (UIStroke) if not already there
+local function addGlow(button)
+    local stroke = button:FindFirstChildOfClass("UIStroke")
+    if not stroke then
+        stroke = Instance.new("UIStroke")
+        stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+        stroke.Thickness = 3
+        stroke.Parent = button
+    end
+    return stroke
+end
+
+local mainStroke = addGlow(mainBtn)
+local codeStroke = addGlow(codeBtn)
+
+-- Rainbow tween function
+local function animateRainbow(stroke)
+    local colors = {
+        Color3.fromRGB(255, 0, 0),    -- Red
+        Color3.fromRGB(255, 128, 0),  -- Orange
+        Color3.fromRGB(255, 255, 0),  -- Yellow
+        Color3.fromRGB(0, 255, 0),    -- Green
+        Color3.fromRGB(0, 255, 255),  -- Cyan
+        Color3.fromRGB(0, 128, 255),  -- Blue
+        Color3.fromRGB(255, 0, 255),  -- Magenta
+    }
+
+    task.spawn(function()
+        while task.wait() do
+            for _, c in ipairs(colors) do
+                local tween = TweenService:Create(stroke, TweenInfo.new(0.5, Enum.EasingStyle.Linear), {Color = c})
+                tween:Play()
+                tween.Completed:Wait()
+            end
+        end
+    end)
+end
+
+-- Start rainbow glow on both
+animateRainbow(mainStroke)
+animateRainbow(codeStroke)
+
+-- Page switcher
+local player = game.Players.LocalPlayer
+local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+
+local mainBtn = gui.bar.bar5.Main
+local codeBtn = gui.bar.bar5.code
+
+-- create two frames to act as pages (Main + Code)
+local mainPage = Instance.new("Frame", gui.bar.bar3)
+mainPage.Name = "MainPage"
+mainPage.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+mainPage.Size = UDim2.new(0.9, 0, 0.9, 0)
+mainPage.Position = UDim2.new(0.05, 0, 0.05, 0)
+mainPage.Visible = true
+
+local codePage = Instance.new("Frame", gui.bar.bar3)
+codePage.Name = "CodePage"
+codePage.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+codePage.Size = UDim2.new(0.9, 0, 0.9, 0)
+codePage.Position = UDim2.new(0.05, 0, 0.05, 0)
+codePage.Visible = false
+
+-- optional: add text labels for demo
+local mainLabel = Instance.new("TextLabel", mainPage)
+mainLabel.Size = UDim2.new(1, 0, 1, 0)
+mainLabel.BackgroundTransparency = 1
+mainLabel.Text = "This is the Main Page"
+mainLabel.TextColor3 = Color3.new(1,1,1)
+mainLabel.TextScaled = true
+
+local codeLabel = Instance.new("TextLabel", codePage)
+codeLabel.Size = UDim2.new(1, 0, 1, 0)
+codeLabel.BackgroundTransparency = 1
+codeLabel.Text = "This is the Code Page"
+codeLabel.TextColor3 = Color3.new(1,1,1)
+codeLabel.TextScaled = true
+
+-- Switching logic
+mainBtn.MouseButton1Click:Connect(function()
+	mainPage.Visible = true
+	codePage.Visible = false
+end)
+
+codeBtn.MouseButton1Click:Connect(function()
+	mainPage.Visible = false
+	codePage.Visible = true
+end)
+
+local TweenService = game:GetService("TweenService")
+local executeButton = G2L["executive_7"]
+local inputBox = G2L["TextBox_14"]
+local clearButton = G2L["clear_b"]
+
+-- ⚡ Execute Button Script Execution
+executeButton.MouseButton1Click:Connect(function()
+    local scriptToExecute = inputBox.Text
+    if scriptToExecute ~= "" then
+        local success, err = pcall(function()
+            loadstring(scriptToExecute)()
+        end)
+        if not success then
+            warn("Error executing script: " .. err)
+        end
+    end
+end)
+
+-- 🧹 Clear Button Clears Text
+clearButton.MouseButton1Click:Connect(function()
+    inputBox.Text = ""
+end)
+
+-- ✨ Animation Function (hover + click pulse)
+local function addButtonAnimation(button, baseColor, hoverColor, clickColor)
+    -- Hover effect
+    button.MouseEnter:Connect(function()
+        TweenService:Create(button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Size = button.Size + UDim2.new(0.05, 0, 0.05, 0),
+            BackgroundColor3 = hoverColor
+        }):Play()
+    end)
+
+    -- Leave effect
+    button.MouseLeave:Connect(function()
+        TweenService:Create(button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enu
