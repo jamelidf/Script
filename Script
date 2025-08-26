@@ -509,4 +509,31 @@ local function addButtonAnimation(button, baseColor, hoverColor, clickColor)
 
     -- Leave effect
     button.MouseLeave:Connect(function()
-        TweenService:Create(button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enu
+        TweenService:Create(button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Size = UDim2.new(0.52941, 0, 0.22131, 0), -- reset to default size (for exec)
+            BackgroundColor3 = baseColor
+        }):Play()
+    end)
+
+    -- Click pulse effect
+    button.MouseButton1Click:Connect(function()
+        local tweenOut = TweenService:Create(button, TweenInfo.new(0.1), {
+            Size = button.Size + UDim2.new(0.1, 0, 0.1, 0),
+            BackgroundColor3 = clickColor
+        })
+        local tweenIn = TweenService:Create(button, TweenInfo.new(0.2), {
+            Size = UDim2.new(0.52941, 0, 0.22131, 0),
+            BackgroundColor3 = baseColor
+        })
+
+        tweenOut:Play()
+        tweenOut.Completed:Wait()
+        tweenIn:Play()
+    end)
+end
+
+-- Apply animations to buttons
+addButtonAnimation(executeButton, Color3.fromRGB(16, 236, 255), Color3.fromRGB(0, 200, 255), Color3.fromRGB(0, 150, 255))
+addButtonAnimation(clearButton, Color3.fromRGB(31, 255, 132), Color3.fromRGB(0, 230, 100), Color3.fromRGB(0, 180, 80))
+
+return G2L["ScreenGui_1"], require;
